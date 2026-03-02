@@ -1,0 +1,60 @@
+# ── Secrets & Credentials ────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# ── Node.js ──────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Build & Cache ────────────────────────────────────────────
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ── macOS ────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Editor / IDE ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── Test & Coverage ──────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── Temporary ────────────────────────────────────────────────
+tmp/
+temp/
+
+# ── Application Data (do NOT commit) ─────────────────────────
+sessions.db
+*.db
+
+# ── Internal / Private Docs ──────────────────────────────────
+Crowdstrike reference Docs/
+Worklogs/
+.agents/
+.gemini/
+PROJECT_PLAN.md
