@@ -26,7 +26,7 @@ function errorHandler(err, req, res, next) {
         stack: config.nodeEnv === 'development' ? err.stack : undefined,
     });
 
-    // ── AI errors (Gemini/OpenAI) — pass through the specific message ──────────────
+    // ── AI errors (Gemini/OpenAI) — pass through the specific message ──────────
     // These errors have meaningful messages that users need to see
     const isAiError = err.message && (
         err.message.includes('Gemini') ||
@@ -45,7 +45,7 @@ function errorHandler(err, req, res, next) {
         });
     }
 
-    // ── CrowdStrike / generic errors — map to friendly messages ────────────
+    // ── CrowdStrike / generic errors — map to friendly messages ────────
     let userMessage = 'An unexpected error occurred. Please try again.';
 
     if (status === 401) {
